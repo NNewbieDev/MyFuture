@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bài tập 12 </title>
+        <style>
+            body{
+                background-image: url("https://sudospaces.com/vietchem-com-vn/2021/01/thien-nhien-la-gi-1.jpg");
+                background-size: cover;
+                color:orange;
+            }
+        </style>
+    </head>
+    <body align="justify">
+        <h1 style="text-align: center;">
+            Thông tin đăng kí
+        </h1>
+        <table border="1px solid aqua" align="center">
+        <td><form style="color: black;" autocomplete="off" action="/action_page.php">
+            <label for="fullname">Họ và tên:</label>
+            <input  type="text" id="fullname" name="fullname">
+            <br>
+            <span>Giới tính:</span> 
+            <input type="radio" id="male" name="sex" value="Nam">
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="sex" value="Nữ">
+            <label for="female">Nữ</label>
+            <br>
+            <label for="time">Ngày sinh:</label>
+            <input type="date" id="time">
+            <br>
+            <span>Điều bạn quan tâm:</span>
+            <input type="checkbox" id="kt" name="kt" value="Kinh tế">
+            <label for="kt">Kinh tế</label>
+            <input type="checkbox" id="xh" name="xh" value="Xã hội">
+            <label for="xh">Xã hội</label>
+            <input type="checkbox" id="gt" name="gt" value="Giải trí">
+            <label for="gt">Giải trí</label>
+            <br>
+            Địa chỉ:
+            <textarea rows="3"></textarea>
+            <br>
+            Học vấn:
+            <select name="Level">
+            <option value="Cao đẳng">Cao đẳng</option>
+            <option value="Trung cấp">Trung cấp</option>
+            <option value="Trung học">Trung học</option>
+            <option value="Tiểu học">Tiểu học</option>
+            </select>
+            <br>
+            <input type="submit" value="Gửi thông tin">
+            <input type="submit" value="Nhập lại">
+        </form>
+        </table>
+    </td>
+    <a href="web.html" >Back to HTML</a>
+    </body>
+</html>
