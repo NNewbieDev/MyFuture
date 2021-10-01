@@ -1,58 +1,79 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Bài tập 12 </title>
-        <style>
-            body{
-                background-image: url("https://sudospaces.com/vietchem-com-vn/2021/01/thien-nhien-la-gi-1.jpg");
-                background-size: cover;
-                color:orange;
-            }
-        </style>
-    </head>
-    <body align="justify">
-        <h1 style="text-align: center;">
-            Thông tin đăng kí
-        </h1>
-        <table border="1px solid aqua" align="center">
-        <td><form style="color: black;" autocomplete="off" action="/action_page.php">
-            <label for="fullname">Họ và tên:</label>
-            <input  type="text" id="fullname" name="fullname">
-            <br>
-            <span>Giới tính:</span> 
-            <input type="radio" id="male" name="sex" value="Nam">
-            <label for="male">Nam</label>
-            <input type="radio" id="female" name="sex" value="Nữ">
-            <label for="female">Nữ</label>
-            <br>
-            <label for="time">Ngày sinh:</label>
-            <input type="date" id="time">
-            <br>
-            <span>Điều bạn quan tâm:</span>
-            <input type="checkbox" id="kt" name="kt" value="Kinh tế">
-            <label for="kt">Kinh tế</label>
-            <input type="checkbox" id="xh" name="xh" value="Xã hội">
-            <label for="xh">Xã hội</label>
-            <input type="checkbox" id="gt" name="gt" value="Giải trí">
-            <label for="gt">Giải trí</label>
-            <br>
-            Địa chỉ:
-            <textarea rows="3"></textarea>
-            <br>
-            Học vấn:
-            <select name="Level">
-            <option value="Cao đẳng">Cao đẳng</option>
-            <option value="Trung cấp">Trung cấp</option>
-            <option value="Trung học">Trung học</option>
-            <option value="Tiểu học">Tiểu học</option>
-            </select>
-            <br>
-            <input type="submit" value="Gửi thông tin">
-            <input type="submit" value="Nhập lại">
-        </form>
-        </table>
-    </td>
-    <a href="web.html" >Back to HTML</a>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bài tập 12 </title>
+
+</head>
+
+<body align="justify">
+    <h1 style="text-align: center;">
+        Thông tin đăng kí
+    </h1>
+    <form method="GET" border="1px solid black" align="center">
+    <table align="center" border="1px solid black" bgcolor="aqua">
+        <table border="1" width="660px" bgcolor="aqua" align="center">
+            <tr>
+                <td><label for="name">Họ tên</label></td>
+                <td>
+                    <input type="text" id="name" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" id="male" name="sex" value="male">
+                    <label for="male">Nam</label>
+                    <input type="radio" id="female" name="sex" value="female">
+                    <label for="female">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="born">Ngày sinh</label></td>
+                <td>
+                    <input type="date" id="born" name="born">
+                </td>
+            </tr>
+            <tr>
+                <td>Điều bạn quan tâm</td>
+                <td>
+                    <input type="checkbox" id="kinhte" name="major" value="kinhte">
+                    <label for="major">Kinh tế</label>
+                    <input type="checkbox" id="xahoi" name="major" value="xahoi">
+                    <label for="major">Xã hội</label>
+                    <input type="checkbox" id="giaitri" name="major" value="giaitri">
+                    <label for="major">Giải trí</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="address">Địa chỉ</label></td>
+                <td>
+                    <textarea id="address" name="address" rows="5" cols="70"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="study">Học vấn</label></td>
+                <td>
+                    <input list="study" name="study">
+                    <datalist id="study">
+                        <option>Đại học</option>
+                        <option>Cao đẳng</option>
+                        <option>Trung cấp</option>
+                        <option>Trung học</option>
+                        <option>Tiểu học</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <input type="submit" value="Gửi thông tin">
+                    <input type="reset" value="Nhập lại">
+                </td>
+            </tr>
+    </table>
+</form>
+    <a href="web.html">Back to HTML</a>
+</body>
+
 </html>
